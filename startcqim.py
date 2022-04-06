@@ -5,6 +5,12 @@
 
 import os
 
+#Creating directories
+if not os.path.exists("drives"):
+	os.mkdir("drives")
+if not os.path.exists("maschines"):
+	os.mkdir("maschines")
+
 #Checking OS type
 if os.name == "nt":
     print("FUCK YOU!!INSTALL GNU/LINUX AND RETURN AGAIN")
