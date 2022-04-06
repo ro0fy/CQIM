@@ -5,15 +5,15 @@ You should have received a copy of the GNU General Public License along with CQI
 
 
 REQUIREMENTS:
-Qemu
-Any Linux distribution
-python3
-pip
-colorama module
+Qemu;
+Any Linux distribution;
+python3;
+pip;
+colorama module;
 
 ТРЕБОВАНИЯ:
-Qemu
-Любой Linux дистрибутив
-python3
-pip
-модуль colorama
+Qemu;
+Любой Linux дистрибутив;
+python3;
+pip;
+модуль colorama;
