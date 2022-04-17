@@ -35,7 +35,7 @@ while True:
     #Adding machine
     if ask1 == "1":
         #Architecture
-        aask1 = input("Architecture:\n1 - x86\n2 - x86_64\n3 - PowerPC\n4 - DEC Alpha\n5 - SPARC(32)\n6 - ARM\n7 - S390\n" + Fore.GREEN + "Add" + "i >> ")
+        aask1 = input("Architecture:\n1 - x86\n2 - x86_64\n3 - PowerPC\n4 - DEC Alpha\n5 - SPARC(32)\n6 - ARM\n7 - S390\n" + Fore.GREEN + "Add" + " >> ")
         if aask1 == "1":
             aout = "x86"
         elif aask1 == "2":
