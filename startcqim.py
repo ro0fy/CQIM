@@ -8,8 +8,8 @@ import os
 #Creating directories
 if not os.path.exists("drives"):
 	os.mkdir("drives")
-if not os.path.exists("maschines"):
-	os.mkdir("maschines")
+if not os.path.exists("machines"):
+	os.mkdir("machines")
 
 #Checking OS type
 if os.name == "nt":
