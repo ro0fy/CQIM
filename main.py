@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+#Copyright Gan Kirill 2022
 
 #This file is part of CQIM.
 #CQIM is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
@@ -23,19 +24,19 @@ Welcome to
 ║║  ║║╔╝║ ║║ ║╔╗╔╗║
 ║╚═╗║╚╝─║╔╝╚╗║║╚╝║║
 ╚══╝╚═══╝╚══╝╚╝  ╚╝
-Version 0.1.2
+Version 0.1.5
 By TheRo0fy
 """)
 print(Style.RESET_ALL)
 
 #Mode
 while True:
-    ask1 = input("1 - Add\n2 - Load \n3 - Create_disk\n4 - Create a custom maschine\n" + Fore.GREEN+ ">> ")
+    ask1 = input("1 - Add\n2 - Load \n3 - Create_disk\n4 - Create a custom maschine\n5 - About\n>> ")
 
     #Adding machine
     if ask1 == "1":
         #Architecture
-        aask1 = input("Architecture:\n1 - x86\n2 - x86_64\n3 - PowerPC\n4 - DEC Alpha\n5 - SPARC(32)\n6 - ARM\n7 - S390\n" + Fore.GREEN + "Add" + " >> ")
+        aask1 = input("Architecture:\n1 - x86\n2 - x86_64\n3 - PowerPC\n4 - DEC Alpha\n5 - SPARC(32)\n6 - ARM\n7 - S390\n>> ")
         if aask1 == "1":
             aout = "x86"
         elif aask1 == "2":
@@ -55,22 +56,22 @@ while True:
             print(Style.RESET_ALL)
             continue
         #Drive path    
-        aask2 = input(str(os.listdir("./drives")) + "Disk path"  + Fore.GREEN + "Add" + " >> ") + " "
+        aask2 = input(str(os.listdir("./drives")) + "Disk path >> ") + " "
         aout2 = " -hda " + "./drives/" + aask2
 
         #RAM
-        aask3 = input("RAM (mb)"  + Fore.GREEN + "Add" + " >> ") + " "
+        aask3 = input("RAM (mb) >> ") + " "
         aout3 = "-m " + aask3
 
         #CDROM path
-        aask4 = input('CDROM path("n" if not use)' + Fore.GREEN + 'Add' + ' >> ')
+        aask4 = input('CDROM path("n" if not use) >> ')
         if aask4 == "n":
             aout4 = " "
         else:
             aout4 = " -cdrom " + aask4
 
         #Boot 
-        aask5 = input("Boot from:\n1 - Floppy\n2 - Hard drive\n3 - CDROM\n4 - From net\n"  + Fore.GREEN + "Add" + " >> ")
+        aask5 = input("Boot from:\n1 - Floppy\n2 - Hard drive\n3 - CDROM\n4 - From net\n>> ")
         if aask5 == "1":
             aout5 = " -boot a"
         elif aask5 == "2":
@@ -85,7 +86,7 @@ while True:
             continue
 
         #Enabling KVM    
-        aask6 = input("KVM (y/n)"  + Fore.GREEN + "Add" + " >> ")
+        aask6 = input("KVM (y/n) >> ")
         if aask6 == "y":
             aout6 = " -enable-kvm"
         elif aask6 == "n":
@@ -96,7 +97,7 @@ while True:
             continue
 
         #Enabling graphics    
-        aask7 = input("Graphical (y/n)"  + Fore.GREEN + "Add" + " >> ")
+        aask7 = input("Graphical (y/n) >> ")
         if aask7 == "n":
             aout7 = " -nographic"
         elif aask7 == "y":
@@ -110,7 +111,7 @@ while True:
         command = qemu_path + "qemu-system-" + aout + aout2 + aout3 + aout4 + aout5 + aout6  + aout7
 
         #Name of  machine        
-        name = input("Name of machine"  + Fore.GREEN + "Add" + " >> ")
+        name = input("Name of machine >> ")
 
         #Final writing
         final = open("./machines/" + name,"w+")
@@ -120,7 +121,7 @@ while True:
     #Loading machine            
     if ask1 == "2":
         #Machine path
-        lask1 = input(str(os.listdir("./machines")) + "\nChoose the machine\n"  + Fore.RED + "Load" + " >> ")
+        lask1 = input(str(os.listdir("./machines")) + "\nChoose the machine >> ")
         if os.path.exists("./machines/" + lask1):
             lout1 = lask1
         else:
@@ -137,11 +138,11 @@ while True:
     #Creating drive
     if ask1 == "3":
         #Drive name
-        dname = input("Drive name\n"  + Fore.YELLOW + "Create drive" + " >> ") + ".qcow2 "
+        dname = input("Drive name >> ") + ".qcow2 "
         #Drvie path
         dpath = "./drives/" + dname
         #Drive size
-        dsize = input("Drive size (mb)\n"  + Fore.YELLOW + "Create drive" + " >> ") + "M"
+        dsize = input("Drive size (mb) >> ") + "M"
         #Final drive command
         dcommand = qemu_path + "qemu-img create -f qcow2 " + dpath + dsize
         os.system(dcommand)
@@ -149,8 +150,15 @@ while True:
     
     #Creating custom machine
     if ask1 == "4":
-        ccommand = input("Enter a custom command\n"  + Fore.BLUE + "Custom" + " >> ")
+        ccommand = input("Enter a custom command\n>> ")
         name = input("Name of machine >> ")
         cfinal = open("./machines/" + name,"w+")
         cfinal.write(ccommand)
-        cfinal.close()        
+        cfinal.close()   
+
+    #About page
+    if ask1 == "5":
+        print("Copyright Gan Kirill 2022\nGNU/GPL\n\nSimple,lightweight text interface for qemu\nhttps://github.com/ro0fy")
+    
+    if ask1 == "help":
+        print("Just answer questions.\nTo change machine configuration edit text file in $CQIM/machines/")
