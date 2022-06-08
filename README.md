@@ -12,5 +12,5 @@ python3;
 pip;
 модуль colorama;
 
-You may install this from install script
-Вы можете установить это с помощью установочного скрипта
+You may install this by command : pip install -r requirements.txt
+Вы можете установить это с помощью команды : pip install -r requirements.txt
