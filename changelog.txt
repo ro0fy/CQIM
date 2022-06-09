@@ -1,0 +1,5 @@
+CQIM 0.1.4.5 
+09.06 14:43
+
+Removed coloring by colorama module.Added coloring by ANSI-codes(No supported Windows)
+Цвет выводится через ANSI-коды, вместо модуля colorama(Не поддерживается на Windows)

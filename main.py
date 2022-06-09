@@ -8,15 +8,22 @@
 
 
 import os
-import colorama
 
-from colorama import init, Fore, Back, Style
+#Colors
+def red(txt):
+    print("\033[31m{}".format(txt))
 
+def green(txt):
+    print("\033[32m{}".format(txt))
+
+def white():
+    print("\033[0m")
+    
 qemu_path_file = open("qemu-path")
 qemu_path = qemu_path_file.read()
-init()
 
-print(Fore.GREEN + """
+
+green("""
 Welcome to 
 ╔══╗╔═══╗╔══╗╔╗  ╔╗
 ║╔═╝║╔═╗║╚╗╔╝║║  ║║
@@ -27,7 +34,8 @@ Welcome to
 Version 0.1.5
 By TheRo0fy
 """)
-print(Style.RESET_ALL)
+white()
+
 
 #Mode
 while True:
@@ -52,8 +60,7 @@ while True:
         elif aask1 == "7":
             aout == "S390"
         else:
-            print(Fore.RED + "\nERROR 2:INVALID OPTION\n")
-            print(Style.RESET_ALL)
+            red("\nERROR 2:INVALID OPTION\n")
             continue
         #Drive path    
         aask2 = input(str(os.listdir("./drives")) + "Disk path >> ") + " "
@@ -81,8 +88,8 @@ while True:
         elif aask5 == "4":
             aout5 = " -boot n"
         else:
-            print(Fore.RED + "\nERROR 2:INVALID OPTION\n")
-            print(Style.RESET_ALL)
+            red("\nERROR 2:INVALID OPTION\n")
+            white()
             continue
 
         #Enabling KVM    
@@ -92,8 +99,8 @@ while True:
         elif aask6 == "n":
             aout6 = " "
         else:
-            print(Fore.RED + "\nERROR 2:INVALID OPTION\n")
-            print(Style.RESET_ALL)
+            red("\nERROR 2:INVALID OPTION\n")
+            white()
             continue
 
         #Enabling graphics    
@@ -103,8 +110,8 @@ while True:
         elif aask7 == "y":
             aout7 = " "
         else:
-            print(Fore.RED + "\nERROR 2:INVALID OPTION\n")
-            print(Style.RESET_ALL)
+            red("\nERROR 2:INVALID OPTION\n")
+            white()
             continue
 
         #Pre-final command for write to file
@@ -125,8 +132,8 @@ while True:
         if os.path.exists("./machines/" + lask1):
             lout1 = lask1
         else:
-            print(Fore.RED + "\nERROR 3:FILE DOES NOT EXIST\n")
-            print(Style.RESET_ALL)
+            red("\nERROR 3:FILE DOES NOT EXIST\n")
+            white()
             continue
 
         #Final machine load    
