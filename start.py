@@ -36,3 +36,5 @@ else:
 	qemu_path_file = open("qemu-path","w+")
 	qemu_path_file.write(qemu_path)
 	qemu_path_file.close
+
+os.system("python3 ./main.py")

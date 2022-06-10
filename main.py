@@ -39,7 +39,7 @@ white()
 
 #Mode
 while True:
-    ask1 = input("1 - Add\n2 - Load \n3 - Create_disk\n4 - Create a custom maschine\n5 - About\n>> ")
+    ask1 = input("1 - Add\n2 - Load \n3 - Create_disk\n4 - Create a custom maschine\n5 - About\n6 - Additional commands\n>> ")
 
     #Adding machine
     if ask1 == "1":
@@ -61,6 +61,7 @@ while True:
             aout == "S390"
         else:
             red("\nERROR 2:INVALID OPTION\n")
+            white()
             continue
         #Drive path    
         aask2 = input(str(os.listdir("./drives")) + "Disk path >> ") + " "
@@ -166,6 +167,37 @@ while True:
     #About page
     if ask1 == "5":
         print("Copyright Gan Kirill 2022\nGNU/GPL\n\nSimple,lightweight text interface for qemu\nhttps://github.com/ro0fy")
+
+    #Additional command guide
+    if ask1 == "6":
+        print("""
+        help - to help 
+        exit - to exit the programm
+        clear - to clear display
+        logo - to show logo
+        
+        """)
     
+    #Additional commands    
     if ask1 == "help":
         print("Just answer questions.\nTo change machine configuration edit text file in $CQIM/machines/")
+
+    if ask1 == "exit":
+        exit()
+
+    if ask1 == "clear":
+        os.system("clear")
+
+    if ask1 == "logo":
+        green("""
+        Welcome to 
+        ╔══╗╔═══╗╔══╗╔╗  ╔╗
+        ║╔═╝║╔═╗║╚╗╔╝║║  ║║
+        ║║  ║║ ║║ ║║ ║╚╗╔╝║
+        ║║  ║║╔╝║ ║║ ║╔╗╔╗║
+        ║╚═╗║╚╝─║╔╝╚╗║║╚╝║║
+        ╚══╝╚═══╝╚══╝╚╝  ╚╝
+        Version 0.1.5.5
+        By TheRo0fy
+        """)
+        white()
