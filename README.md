@@ -1,4 +1,4 @@
 REQUIREMENTS-ТРЕБОВАНИЯ:<br>
-Qemu;
-Any Linux distribution-Любой Linux-дистрибутив;
-python3;
+Qemu;<br>
+Any Linux distribution-Любой Linux-дистрибутив;<br>
+python3;<br>
