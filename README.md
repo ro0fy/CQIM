@@ -1,16 +1,7 @@
-REQUIREMENTS:
-Qemu;
-Any Linux distribution;
-python3;
-pip;
-colorama module;
+REQUIREMENTS:<br>
+Qemu;<br>
+Any Windows distribution;<br>
+python3;<br>
+pip;<br>
+colorama module;<br>
 
-ТРЕБОВАНИЯ:
-Qemu;
-Любой Linux дистрибутив;
-python3;
-pip;
-модуль colorama;
-
-You may install this from install script
-Вы можете установить это с помощью установочного скрипта
