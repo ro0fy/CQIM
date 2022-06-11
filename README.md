@@ -4,4 +4,4 @@
 * python3;<br>
 
 ## RUNNING-ЗАПУСК:<br>
-`$ python3 start.py<`
+`$ python3 start.py`
