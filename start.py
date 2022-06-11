@@ -6,12 +6,10 @@
 import os
 
 #Creating directories
-if not os.path.exists("~/.cqim"):
-    os.mkdir("~/.cqim")
-if not os.path.exists("~/.cqim/drives"):
-	os.mkdir("~/.cqim/drives")
-if not os.path.exists("~/.cqim/machines"):
-	os.mkdir("~/.cqim/machines")
+if not os.path.exists("./drives"):
+	os.mkdir("./drives")
+if not os.path.exists("./machines"):
+	os.mkdir("./machines")
 
 #Checking OS type
 if os.name == "nt":
