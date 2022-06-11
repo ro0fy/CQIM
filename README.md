@@ -4,4 +4,4 @@ Any Linux distribution-Любой Linux-дистрибутив;<br>
 python3;<br>
 
 RUNNING-ЗАПУСК:<br>
-$ python3 start.py<br>
+`$ python3 start.py<br>`
