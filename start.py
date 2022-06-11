@@ -6,10 +6,12 @@
 import os
 
 #Creating directories
-if not os.path.exists("drives"):
-	os.mkdir("drives")
-if not os.path.exists("machines"):
-	os.mkdir("machines")
+if not os.path.exists("~/.cqim"):
+    os.mkdir("~/.cqim")
+if not os.path.exists("~/.cqim/drives"):
+	os.mkdir("~/.cqim/drives")
+if not os.path.exists("~/.cqim/machines"):
+	os.mkdir("~/.cqim/machines")
 
 #Checking OS type
 if os.name == "nt":
@@ -38,3 +40,4 @@ else:
 	qemu_path_file.close
 
 os.system("python3 ./main.py")
+    
