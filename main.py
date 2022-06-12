@@ -175,6 +175,7 @@ while True:
         exit - to exit the programm
         clear - to clear display
         logo - to show logo
+        ls - to show the avaible machine list
         
         """)
     
@@ -201,3 +202,5 @@ while True:
         By TheRo0fy
         """)
         white()
+    if ask1 == "ls":
+        os.system("ls ./machines")
