@@ -7,6 +7,5 @@
 Start the start script<br>
 `$ python3 start.py`<br>
 Enter the path to the Qemu binaries<br>
-`Path to qemu binaries
->>`
+`Path to qemu binaries >>`
 
