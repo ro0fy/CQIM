@@ -11,23 +11,6 @@ if not os.path.exists("./drives"):
 if not os.path.exists("./machines"):
 	os.mkdir("./machines")
 
-#Checking OS type
-if os.name == "nt":
-    print("FUCK YOU!!INSTALL GNU/LINUX AND RETURN AGAIN")
-    exit()
-
-elif os.name == "mac":
-    print("FUCK YOU!!INSTALL GNU/LINUX AND RETURN AGAIN")
-    exit()
-
-elif os.name == "os2":
-    print("FUCK YOU!!INSTALL GNU/LINUX AND RETURN AGAIN")
-    exit()
-
-elif os.name == "java":
-    print("FUCK YOU!!INSTALL GNU/LINUX AND RETURN AGAIN")
-    exit()
-
 if os.path.exists("./qemu-path"):
     os.system("python3 ./main.py")
 
