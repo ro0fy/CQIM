@@ -3,7 +3,7 @@ CQIM is console interface manager for Qemu with the ability to easily and quickl
 
 ## REQUIREMENTS<br>
 * Qemu<br>
-* Any Linux distribution<br>
+* Any *nix system<br>
 * python3<br>
 
 ## RUNNING<br>
