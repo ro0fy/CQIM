@@ -1,3 +1,6 @@
+## CQIM by ro0fy
+`CQIM is console interface manager for Qemu with the ability to easily and quickly manage virtual machines`
+
 ## REQUIREMENTS<br>
 * Qemu<br>
 * Any Linux distribution<br>
