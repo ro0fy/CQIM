@@ -185,7 +185,7 @@ while True:
 
     if ask1 == "exit":
         exit()
-
+                
     if ask1 == "clear":
         os.system("clear")
 

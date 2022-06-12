@@ -12,3 +12,6 @@ Run the start script<br>
 Enter the path to the Qemu binaries (default - /usr/bin/)<br>
 `Path to qemu binaries >>`
 
+## LICENSE<br>
+GNU GPLv3<br>
+More in COPYING file
