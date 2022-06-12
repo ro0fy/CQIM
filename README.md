@@ -9,6 +9,6 @@
 ## RUNNING<br>
 Run the start script<br>
 `$ python3 start.py`<br>
-Enter the path to the Qemu binaries (default - /usr/bin)<br>
+Enter the path to the Qemu binaries (default - /usr/bin/)<br>
 `Path to qemu binaries >>`
 
