@@ -7,10 +7,11 @@ CQIM is console interface manager for Qemu with the ability to easily and quickl
 * python3<br>
 
 ## INSTALLATION & RUNNING<br>
-Install Qemu<br>
+Install Qemu:<br>
 For debian/ubuntu `sudo apt install qemu qemu-system`<br>
 For fedora/RHEL `sudo dnf install qemu qemu-system`<br>
 For Arch `sudo pacman -S qemu qemu-system`<br>
+<br>
 Clone the repository<br>
 `git clone https://github.com/ro0fy/CQIM`<br>
 Changedir to repository<br>
