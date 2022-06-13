@@ -11,7 +11,7 @@ if not os.path.exists("./drives"):
 if not os.path.exists("./machines"):
 	os.mkdir("./machines")
 
-eif not os.path.exists(".qemu-path"):
+if not os.path.exists(".qemu-path"):
 	qemu_path = input("Path to qemu binaries\n>>")
 	qemu_path_file = open("qemu-path","w+")
 	qemu_path_file.write(qemu_path)
