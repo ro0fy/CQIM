@@ -6,7 +6,11 @@
 * Any Linux distribution<br>
 * python3<br>
 
-## RUNNING<br>
+## INSTALLATION & RUNNING<br>
+Clone the repository<br>
+`git clone https://github.com/ro0fy/CQIM`
+Changedir to repository
+`cd CQIM`
 Run the start script<br>
 `$ python3 start.py`<br>
 Enter the path to the Qemu binaries (default - /usr/bin/)<br>
