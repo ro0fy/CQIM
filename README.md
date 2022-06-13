@@ -19,7 +19,8 @@ Changedir to repository<br>
 Run the start script<br>
 `$ python3 start.py`<br>
 Enter the path to the Qemu binaries (default - /usr/bin/)<br>
-`Path to qemu binaries >>`
+ ```Path to qemu binaries
+ >> ```
 
 ## LICENSE<br>
 GNU GPLv3<br>
