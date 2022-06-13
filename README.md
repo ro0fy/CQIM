@@ -23,4 +23,5 @@ Enter the path to the Qemu binaries (default - /usr/bin/)<br>
 
 ## LICENSE<br>
 GNU GPLv3<br>
+You are free to redistribute and modify the code, provided it is open source.<br>
 More in COPYING file
