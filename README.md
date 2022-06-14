@@ -18,6 +18,10 @@ Changedir to repository<br>
 `cd CQIM`<br>
 Run the start script<br>
 `$ python3 start.py`<br>
+<br>
+Or download the binary file (by pyinstaller) in releases & run it.<br>
+`./cqim`<br>
+<br>
 Enter the path to the Qemu binaries (default - /usr/bin/)<br>
  `Path to qemu binaries >>` 
 
