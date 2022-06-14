@@ -42,7 +42,7 @@ Welcome to
 ║╚═╗║╚╝─║╔╝╚╗║║╚╝║║
 ╚══╝╚═══╝╚══╝╚╝  ╚╝
 Version 0.1.5.9
-By TheRo0fy
+By ro0fy
 """)
 white()
 
