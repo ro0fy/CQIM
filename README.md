@@ -17,7 +17,7 @@ Clone the repository<br>
 Changedir to repository<br>
 `cd CQIM`<br>
 Run the start script<br>
-`$ python3 start.py`<br>
+`python3 start.py`<br>
 <br>
 Or download the binary file (by pyinstaller) in releases & run it.<br>
 `./cqim`<br>
